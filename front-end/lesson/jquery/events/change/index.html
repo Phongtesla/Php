@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sự kiện chagne</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<style>
+		input, select, textarea{
+			display: block;
+				margin-bottom: 20px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("input#form_input_text").change(function(){
+				alert($(this).val())
+			})
+			$("select#form_select").change(function(){
+				alert($(this).val())
+			})
+			$("textarea#form_textarea").change(function(){
+				alert($(this).val())
+			})
+			$("#other").click(function(){
+				$("select#form_select").change();
+			})
+		});
+	</script>
+		<h1>Sự kiện change trong Jquery</h1>
+		<form method="post">
+			<input type="text" id="form_input_text" name="form_input_text">
+			<select id="form_select">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="ngu">3</option>
+			</select>
+			<textarea id="form_textarea"></textarea>
+		</form>
+
+		<a href="#" id="other">Kích hoạt</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Size box</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<style>
+		.box-parent{
+			height: 200px;
+		}
+	</style>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Size box trong B</h1>
+				<h2 class="text-center">Chiều rộng</h2>
+				<div class="box-parent bg-secondary clearfix">
+					<div class="box-child bg-success w-25">25%</div>
+					<div class="box-child bg-success w-50">50%</div>
+					<div class="box-child bg-success w-75">75%</div>
+					<div class="box-child bg-success w-100">100%</div>
+					<div class="box-child bg-success w-auto">auto</div>
+				</div>
+				<h2 class="text-center">Chiều cao</h2>
+				<div class="box-parent bg-secondary clearfix">
+					<div class="box-child bg-success w-25 float-left h-25">25%</div>
+					<div class="box-child bg-success w-25 float-left h-50">50%</div>
+					<div class="box-child bg-success w-25 float-left h-75">75%</div>
+					<div class="box-child bg-success w-25 float-left h-auto">auto</div>
+				</div>	
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Menu	</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<style>
+		.dropdown-menu{
+			width: 300px;
+		}
+	</style>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Dropdown menu trong B</h1>
+				<div class="dropdown float-right my-dropdown">
+					<button class="btn btn-danger dropdown-toggle " data-dislay="static" data-toggle="dropdown">Dropdown Menu</button>
+					<div class="dropdown-menu dropdown-menu-left">
+						<a href="" class="dropdown-item">Menu item 1</a>
+						<a href="" class="dropdown-item">Menu item 2</a>
+						<a href="" class="dropdown-item">Menu item 3</a>
+						<div class="dropdown-divider"></div>
+						<div class="dropdown-header text-muted">MORE</div>
+						<a href="" class="dropdown-item">Menu item 1</a>
+						<a href="" class="dropdown-item">Menu item 2</a>
+						<a href="" class="dropdown-item">Menu item 3</a>
+						<div class="dropdown-divider"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, libero.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+			<script>
+		$(document).ready(function(){
+			$("#my-dropdown").on('show.bs.dropdown', function(){
+				alert("show");
+			})
+		})
+	</script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

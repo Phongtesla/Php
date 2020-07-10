@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Slideshow trong B</h1>
+				<button class="btn btn-danger" data-toggle="tooltip" title="Bấm để nhận ưu đãi">Đăng kí</button>
+				<form action="">
+					Username <input type="text" data-toggle="tooltip" title="có 6 ký tự viết liền không dấu">
+				</form>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis harum at architecto labore officia eligendi laboriosam amet saepe ducimus laborum corrupti totam, nam qui commodi. Accusamus cum eum, cumque quisquam praesentium optio sint cupiditate. Temporibus ea mollitia saepe numquam tempore dignissimos eos earum, sapiente. Ipsam, quisquam harum non facilis nihil.</p>
+				<p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="Ngày <strong>cô ấy</strong> đi theo chân mẹ cha">sit amet,</a> consectetur adipisicing elit. Laudantium magni obcaecati amet eligendi molestias reiciendis repellendus eaque mollitia libero ducimus!</p>
+				<p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="Ngày cô ấy đi theo chân mẹ cha">sit amet,</a> consectetur adipisicing elit. Laudantium magni obcaecati amet eligendi molestias reiciendis repellendus eaque mollitia libero ducimus!</p>
+				<p>Lorem ipsum dolor <a href="" data-toggle="tooltip" title="Ngày cô ấy đi theo chân mẹ cha">sit amet,</a> consectetur adipisicing elit. Laudantium magni obcaecati amet eligendi molestias reiciendis repellendus eaque mollitia libero ducimus!</p>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip({
+					placement: "left",
+					strigger: "hover focus",
+					html: true
+				})
+
+			})
+		</script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

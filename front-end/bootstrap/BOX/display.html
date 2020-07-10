@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bo tròn góc</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Display</h1>
+				<h3 class="text-center">Display cho tất cả các thiết bị</h3>
+				<div class="box bg-dark text-light d-inline-block">Rounded</div>
+				<div class="box bg-danger text-light d-inline-block">TOP</div>
+				<h3 class="text-center">Display for divices difference</h3>
+				<!-- Màn hình nhỏ hơn 768 -> hide box 1 -->
+				<!-- Màn hình lớn hơn sm -> hiện -->
+				<!-- box 3 hiện trong 768<box3<992 -->
+				<div class="box bg-dark text-light d-none d-md-block">BOX 1</div>
+				<div class="box bg-danger text-light d-none d-sm-block">BOX 2</div>
+				<div class="box bg-primary text-light d-none d-md-block d-lg-none">BOX 3</div>
+				<div class="box bg-warning text-light">BOX 4</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

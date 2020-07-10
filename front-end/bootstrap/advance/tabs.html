@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Tab trong B</h1>
+				<!-- Cấu trúc tab -->
+				<nav>
+					<div class="nav nav-tabs">
+						<a href="#tab-content-1" class="nav-item nav-link active" data-toggle="tab">Item 1</a>
+						<a href="#tab-content-2" class="nav-item nav-link" data-toggle="tab">Item 2</a>
+						<a href="#tab-content-3" class="nav-item nav-link " data-toggle="tab">Item 3</a>
+					</div>
+				</nav>
+				<!-- Nội dung tab -->
+				<div class="tab-content">
+					<div id="tab-content-1" class="tab-pane show fade active"><p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe at aliquam laudantium eius porro ad explicabo voluptatum nisi minima, similique vitae, et impedit, esse ipsam qui ullam magnam iusto. Est et fugit ut quod consectetur eius nulla minus vero quasi recusandae dolorem maiores, rem nobis ducimus eligendi exercitationem reiciendis tempora architecto, voluptatibus suscipit voluptates! Ut illum sed quae laboriosam adipisci, quam similique! Quam ipsum recusandae error repellat fugit sed rerum iste laborum magnam tempora ullam eos saepe praesentium magni cum asperiores, quibusdam placeat fugiat quidem pariatur, minus nesciunt quas. Illum cum aliquam, sed pariatur qui accusamus aliquid? Delectus, voluptas, inventore.</p></div>
+					<div id="tab-content-2" class="tab-pane show fade">Content 2</div>
+					<div id="tab-content-3" class="tab-pane show fade">Content 3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip({
+					placement: "left",
+					strigger: "hover focus",
+					html: true
+				})
+
+			})
+		</script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

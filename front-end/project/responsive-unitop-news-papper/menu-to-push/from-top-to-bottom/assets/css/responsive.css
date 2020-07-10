@@ -1,0 +1,109 @@
+/* Ipad ngang (1024x768) */
+@media screen and (max-width: 845px){
+    header #top-header{
+        margin-bottom: 0px;
+    }
+    #top-header #search-box{
+        display: none;
+    }
+    #bottom-header #main-menu{
+        display: none;
+    }
+    #bottom-header #red{
+        display: none;
+    }
+    #top-header #icon-menu-responsive{
+        display: block;
+        position: relative;
+        left: 3px;
+    }
+    #high-light .box-body ul.list-post li:last-child{
+        display: none;
+    }
+    #high-light .box-body ul.list-post li:nth-child(even){
+        padding-right: 0px;
+    }
+    #wp-content{
+        display: block;
+    }
+    #content{
+        padding-right: 0px;
+        max-width: 100%;
+        padding-bottom: 30px;
+        border-bottom:1px solid #4db2ec;
+    }
+    #content .box-body ul.list-post li:nth-child(odd){
+        display: none;
+    }
+    #sidebar{
+        margin-top: 30px;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    footer .wp-inner ul.list-widget{
+        display: block;
+    }
+    footer .wp-inner ul.list-widget .about{
+        margin-bottom: 40px;
+    }
+    footer .wp-inner ul.list-widget .follow .widget-content ul.list-contact{
+        max-width: 200px;
+    }
+}
+
+/* Ipad dọc (768x1024) */
+@media screen and (max-width: 768px){
+    footer .wp-inner ul.list-widget li.logo{
+        display: none;
+    }
+    #sidebar a#banner{
+        display: none;
+    }
+}
+
+/* Tablet nhỏ (480x640) */
+@media screen and (max-width: 487px){
+    #content .box-body ul.list-post li .info p.post-desc{
+        display: none;
+    }
+    #high-light .box-body ul.list-post li:nth-child(even){
+        display: none;
+    }
+    #high-light .box-body ul.list-post li:first-child{
+        max-width: 100%;
+        padding-right: 0px;
+    }
+    #coppy-right .wp-inner{
+        display: block;
+    }
+    #coppy-right .wp-inner p.coppy{
+        margin-bottom: 30px;
+    }
+    #coppy-right .wp-inner ul.more li:first-child a{
+        padding-left: 0px;
+    }
+    #coppy-right .wp-inner ul.more{
+        max-width: 233px;
+    }
+}
+
+/* Iphone (480x640) */
+@media screen and (max-width: 320px){
+    #content .box-body ul.list-post li{
+        display: block;
+    }
+    #content .box-body ul.list-post li .thumb{
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+    #content .box-body ul.list-post li .info{
+        padding-left: 0px;
+    }
+    footer .wp-inner ul.list-widget .about .widget-content p{
+        display: none;
+    }
+}
+
+/* Smart phone nhỏ */
+@media screen and (max-width: 240px){
+}

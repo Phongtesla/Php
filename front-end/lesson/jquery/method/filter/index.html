@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Nhóm phương thức về giá trị</title>
+	<script src='Js/jquery-3.4.1.min.js'></script>
+</head>
+<body>
+	<style>
+			/* form *{
+				margin:10px;
+				display: block;
+			} */
+			ul#sub-menu{
+				/* 	display: none; */
+			}
+	</style>
+		<script>
+			$(document).ready(function(){
+				//eq
+				// $("p:eq(2)").css("color","red")
+				//not
+				// $("p:not(.highlight)").css('color',"red")
+				//filter
+				// $("p").filter('.highlight').css('color',"red");
+				//next
+				//$("p").filter('.highlight').next().css('color',"red");
+				//nextAll
+				// $("p").eq(1).nextAll('.highlight').css('color',"red");
+				//prev
+				//$("p").filter('.highlight').prevAll().css('color',"red");
+				//prevAll
+				// $("p").eq(5).prevAll('.highlight').css('color',"red");
+				//is
+				/*$('p').click(function(){
+					if($(this).is('.highlight')) {
+						alert('highlight');
+					}
+				})*/
+				//Tìm con
+				/*$("#main-menu li").click(function(){
+					$(this).children('#sub-menu').show();
+					$(this).children('#sub-menu').find('a').css('color','red')
+				})*/
+				//Tìm cha ruột: parent, Tìm cha ông cụ tổ tiên: parents
+				$("#main-menu a").click(function(){
+					// Tìm cha
+					// $(this).parent('li').parent('ul').css('border','1px solid red')
+					//Tìm cha ông cụ tổ tiên
+					$(this).parents('ul').css('border','1px solid red')
+					return false;
+				})
+	 		});
+		</script>
+		<!-- <p>Đoạn văn 1</p>
+		<p class="highlight">Đoạn văn 2</p>
+		<p>Đoạn văn 3</p>
+		<p>Đoạn văn 4</p>
+		<p class="highlight">Đoạn văn 5</p>
+		<p>Đoạn văn 6</p> -->
+		<ul id="main-menu">
+			<li><a href="">Menu 1</a></li>
+			<li><a href="">Menu 2</a>
+				<ul id="sub-menu">
+					<li><a href="">Menu 2.1</a></li>
+					<li><a href="">Menu 2.2</a></li>
+					<li><a href="">Menu 2.3</a></li>
+					<li><a href="">Menu 2.4</a></li>
+				</ul>
+			</li>
+			<li><a href="">Menu 3</a></li>
+			<li><a href="">Menu 4</a>
+				<ul id="sub-menu">
+					<li><a href="">Menu 4.1</a></li>
+					<li><a href="">Menu 4.2</a></li>
+					<li><a href="">Menu 4.3</a></li>
+					<li><a href="">Menu 4.4</a></li>
+				</ul>
+			</li>
+			<li><a href="">Menu 5</a></li>
+			<li><a href="">Menu 6</a></li>
+		</ul>
+</body>
+</html>

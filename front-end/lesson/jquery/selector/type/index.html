@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector theo loại</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			//Phàn tử đầu tiên cùng loại
+			//$("a:first-of-type").css('color','red');
+			//Phàn tử cuối cùng loại
+			//$("a:last-of-type").css('color','red');
+			//Phần tử có 1 phần tỉ con duy nhất
+			$(".box:only-of-type").css('color',('red'))
+	 	});
+	</script>
+		<a href="">Link 1</a>
+		<p>Văn bản 1</p>
+		<h2>Tiêu đề 1</h2>
+		<a href="">Link 2</a>
+		<p>Văn bản 2</p>
+		<h2>Tiêu đề 2</h2>
+		<a href="">Link 3</a>
+		<p>Văn bản 3</p>
+		<h2>Tiêu đề 3</h2>
+		<h2>Tiêu đề 4</h2>
+		<h2>Tiêu đề 5</h2>
+	</div>
+	<div class="box">
+		<h2>Tiêu đề 6</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.table_data {
+    width: 100%;
+}
+
+.table_data thead tr td{
+    font-weight: bold;
+    padding: 2px 8px;
+}
+.table_data tr td {
+    border-bottom:1px solid #333;
+    padding: 1px 8px;
+}
+.pagging{
+    float: right;
+}
+.pagging li {
+    float: left;
+    padding: 0px 2px;
+}
+.pagging li a{
+    display: block;
+    padding: 0px 5px;
+    color: #333;
+    border: 1px solid #dedede;
+}
+.pagging li.active a{
+    background: red;
+    color: seashell;
+}

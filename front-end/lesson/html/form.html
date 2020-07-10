@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>form trong website</title>
+</head>
+<body>
+	<h1>Đăng kí tài khoản cf đi mượn mượn cl</h1>
+<form>
+	<!-- Tên người dùng -->
+	<label for="fullname">Họ tên</label><br>
+	<input type="text" name="fullname" placeholder="Họ và tên" id="fullname"><br>
+	<!-- username -->
+    <label for="username">Tên đăng nhập</label><br>
+    <input type="text" name="username" id="username"><br>
+
+    <!-- password -->
+    <label for="password">Mật khẩu</label><br>
+    <input type="password" name="password" id="password"><br>
+    <!-- email -->
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email"><br>
+    <!-- Giới tính -->
+    <label>Giới tính</label><br>
+    <input type="radio" name="gender" value="male" id="male"><label for="male">Nam</label>
+    <input type="radio" name="gender" value="female" id="female"><label for="female">Nữ</label><br>
+    <!-- Ngày sinh -->
+    <label>Ngày sinh</label><br>
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select><br>
+    <!-- sở thích -->
+    <label>Sở thích:</label><br>
+    <input type="checkbox" name="hobby[]" value="travel">Du lịch<br>
+    <input type="checkbox" name="hobby[]" value="shopping">Mua sắm<br>
+    <input type="checkbox" name="hobby[]" value="sport">Chơi thể thao<br>
+    <!-- ước mơ -->
+    <label for="passion">Ước mơ</label><br>
+    <textarea rows="10" cols="20"></textarea><br>
+    <input type="submit" name="reg" value="Đăng kí">
+</form>
+</body>
+</html>

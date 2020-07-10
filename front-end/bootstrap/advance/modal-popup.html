@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal popup	</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<style>
+		#demo-modal{
+			/*display: block;*/
+		}
+	</style>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Modal popup trong B</h1>
+				<!-- Kích hoạt modal -->
+				<button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Show modal</button>
+				<!-- cấu trúc modal -->
+				<div class="modal fade" id="demo-modal">
+					<div class="modal-dialog modal-dialog-scrollable ">
+						<div class="modal-content">
+							<!-- modal-header -->
+							<div class="modal-header">
+								<h5 class="modal-title">Demo Modal UNITop</h5>
+								<button class="close" data-dismiss="modal">
+									<span>&times;</span>
+								</button>
+							</div>
+							<!-- modal-body -->
+							<div class="modal-body">
+								<div class="container-fluid">
+									<div class="row ">
+										<div class="col-12">
+											<div class="bg-dark">col-12</div>
+										</div>
+										<div class="col-6"><div class="bg-primary">col-6</div></div>
+											<div class="col-6"><div class="bg-danger">col-6</div></div>
+
+									</div>
+								</div>
+							</div>
+							<!-- modal-footer -->
+							<div class="modal-footer">
+								<button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+								<button class="btn btn-secondary">Lưu</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$("#demo-modal").click(function(){
+    			$("#demo-modal").modal();
+    		})
+
+    		// $("#demo-modal").on('show.bs.modal', function(){
+    		// 	alert('Show modal');
+    		// })
+    		/*$("#demo-modal").on('shown.bs.modal', function(){
+    			alert('Show modal');
+    		})*/
+    		/*$("#demo-modal").on('hide.bs.modal', function(){
+    			alert('Show modal');
+    		})*/
+    		$("#demo-modal").on('hidden.bs.modal', function(){
+    			alert('Hidden modal');
+    		})
+    	})
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.wp-inner{
+    max-width: 1160px;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+.wp-inner-ft{
+    width: 1185px;
+    margin: 0px auto;
+}
+.fl-left{
+    float: left;
+}
+.fl-right{
+    float: right;
+}
+.fl-none{
+    float: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-upercase{
+    text-transform: uppercase;
+}
+.pd-left{
+    padding-left: 0px!important;
+}
+.pd-right{
+    padding-right: 0px!important;
+}
+.pd-bottom{
+    padding-bottom: 0px!important;
+}
+.mg-bottom{
+    margin-bottom: 0px!important;
+}
+.mg-right{
+    margin-right: 0px!important;
+}
+.mg-left{
+    margin-left: 0px!important;
+}
+.pd-8-15{
+    padding: 8px 15px!important;
+}
+.bd-none{
+    border: none!important;
+}

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Nhóm phương thức tác động kích thước</title>
+	<script src='Js/jquery-3.4.1.min.js'></script>
+</head>
+<body>
+	<style>
+		.box{
+			border: 1px solid red;
+			height: 100px;
+			width: 200px;
+			margin:20px 0px;
+		}
+		#box-1{
+			padding: 10px 20px;
+		}
+	</style>
+		<script>
+			$(document).ready(function(){
+				var height_box_1, inner_height_box_1, outer_height_box_1;
+				var width_box_1, inner_width_box_1, outer_width_box_1;
+				height_box_1 = $("#box-1").height();
+				inner_height_box_1 = $("#box-1").innerHeight();
+				outer_height_box_1 = $("#box-1").outerHeight();
+				width_box_1 = $("#box-1").width();
+				inner_width_box_1 = $("#box-1").innerWidth();
+				outer_width_box_1 = $("#box-1").outerWidth();
+				console.log(width_box_1 +"-"+ inner_width_box_1 +"-"+ outer_width_box_1);
+				console.log(height_box_1 +"-"+ inner_height_box_1 +"-"+ outer_height_box_1);
+	 		});
+		</script>
+		<h1>Phương thức xử lý kích thước tring Jquery</h1>
+		<div class="box" id="box-1">1</div>
+		<div class="box" id="box-2">2</div>
+		<div class="box" id="box-3">3</div>
+
+</body>
+</html>

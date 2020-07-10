@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form	layout</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<style>
+		#demo-modal{
+			/*display: block;*/
+		}
+	</style>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 bg-secondary text-light">
+				Sidebar left
+				
+			</div>
+			<div class="col-md-8">
+				<h1 class="text-center">Form layout trong B</h1>
+				<h3>Form group</h3>
+				<form action="">
+					<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" name="username" id="username">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" name="password" id="password">
+					</div>
+				</form>
+				<h3>Form Grid</h3>
+				<form action="">
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="username" id="username" placeholder="username">
+						</div>
+						<div class="col-md-6">
+							<input type="password" class="form-control" name="password" id="password" placeholder="password">
+						</div>
+					</div>
+				</form>
+				<h3>Form Row</h3>
+				<form action="">
+					<div class="form-row">
+						<div class="col-md-6">
+							<input type="text" class="form-control" name="username" id="username" placeholder="username">
+						</div>
+						<div class="col-md-6">
+							<input type="password" class="form-control" name="password" id="password" placeholder="password">
+						</div>
+					</div>
+				</form>
+				<h3>Form Grid + group</h3>
+				<form action="">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" class="form-control" name="username" id="username">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" name="password" id="password">
+							</div>
+						</div>
+					</div>
+				</form>
+				<h3>Form có 2 cột</h3>
+				<form action="">
+					<div class="row form-group">
+						<label for="username"  class="col-md-2">Username</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" name="username" id="username">
+						</div>
+					</div>
+					<div class="row form-group">
+						<label for="password"  class="col-md-2">Password</label>
+						<div class="col-md-10">
+							<input type="password" class="form-control" name="password" id="password">
+						</div>
+					</div>
+				</form>
+				<h3>Form inline</h3>
+				<form action="">
+					<div class="row form-inline">
+						<label for="username"  class="">Username</label>
+						<input type="text" class="form-control" name="username" id="username">
+						<label for="password"  class="">Password</label>
+						<input type="password" class="form-control" name="password" id="password">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 bg-secondary text-light">
+				Sidebar right
+				
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

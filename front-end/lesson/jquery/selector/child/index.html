@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector lọc theo phần tử con</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+		//Chọn bài viết đầu tiên
+			//$("ul.list-post :first-child").css("color","red");
+		//Chọn bài viết cuối
+			//$("ul.list-post :last-child").css("color","red");
+		//Chọn bài viết qua các thuộc tính
+			//$("ul.list-post :nth-child(2)").css("color","red");
+			//$("ul.list-post :nth-child(odd)").css("color","red");
+			//$("ul.list-post :nth-child(even)").css("color","red");
+			//$("ul.list-post :nth-child(2n)").css("color","red");
+			//$("ul.list-post :nth-child(3n)").css("color","red");
+		//chọn bài viết là duy nhất của 1 selector nào đó
+			$("ul.list-post :only-child").css("color","red");
+
+	 	});
+	</script>
+	<ul class="list-post">
+		<li>Bài viết 1</li>
+		<li>Bài viết 2</li>
+		<li>Bài viết 3</li>
+		<li>Bài viết 4</li>
+		<li>Bài viết 5</li>
+		<li>Bài viết 6</li>
+		<li>Bài viết 7</li>
+		<li>Bài viết 8</li>
+		<li>Bài viết 9</li>
+	</ul>
+	<ul class="list-post">
+		<li>Bài viết aloalongu1513</li>
+	</ul>
+</html>

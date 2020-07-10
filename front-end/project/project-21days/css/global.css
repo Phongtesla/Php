@@ -1,0 +1,31 @@
+.fl-left{
+	float: left;
+}
+.fl-right{
+	float: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-justify{
+	text-align: justify;
+}
+.wp-inner{
+	width: 1170px;
+	margin:0px auto;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.d-flex{
+	display: flex;
+}
+.justify-content-between{
+	justify-content: space-between;
+}

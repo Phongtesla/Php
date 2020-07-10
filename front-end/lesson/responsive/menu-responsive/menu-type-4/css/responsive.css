@@ -1,0 +1,32 @@
+
+
+
+/* Ipad ngang 1024x768 */
+    @media screen and (max-width: 1024px){
+        #wrapper{
+            width: 100%;
+        }
+        #logo{
+            display: inline-block;
+        }
+    }
+/* Ipad dọc 768x1024 */
+    @media screen and (max-width: 768px){
+        #main-menu{ display: none; }
+        #icon-menu-responsive{
+            display: block;   
+        }
+        #header, #logo{
+            text-align: center;
+        }
+        #logo{
+            float: none;
+        }
+    }
+/* Tablet nhỏ(480x640) */
+    @media screen and (max-width: 480px){
+        #content, #sidebar{
+            width: 100%
+        }
+    }
+       

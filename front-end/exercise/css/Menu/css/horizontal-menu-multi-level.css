@@ -1,0 +1,61 @@
+body{
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+	line-height: 22px;
+}
+/*style header*/
+#header{
+	background: #2bbc9b;
+	height: 75px;
+}
+#logo{
+	padding: 7px 0px;
+}
+#main-menu li{
+	position: relative;
+	float: left;
+}
+#main-menu li a{
+	padding: 30px 28px;
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+}
+#main-menu>li:hover>a{
+	background: #24a085;
+	transition: all 0.5s;
+}
+#main-menu .sub-menu li {
+	float: none;
+}
+#main-menu .sub-menu{
+	position: absolute;
+	width: 240px;
+	background: #2bbc9b;
+	top: 0px;
+	left: 100%;
+	display: none;
+}
+#main-menu>li>.sub-menu{
+	top: 75px;
+	left: 0px;
+}
+#main-menu .sub-menu li a{
+	position: relative;
+	font-size: 18px;
+	padding: 18px 28px 17px;
+	border-top: 1px solid #fff;
+}
+#main-menu .sub-menu li a:after{
+	content: 	"\f0da";
+	font-family: FontAwesome;
+	position: absolute;
+	right: 15px;
+	font-size: 16px;
+}
+#main-menu li:hover>ul.sub-menu{
+	display: block;
+}
+#main-menu .sub-menu li:hover>a{
+	background:#24a085;
+}

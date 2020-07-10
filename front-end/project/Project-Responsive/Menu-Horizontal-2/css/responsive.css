@@ -1,0 +1,79 @@
+/* Ipad ngang 1024x768 */
+    @media screen and (max-width: 1024px){
+        .wp-inner{
+            width: 100%;
+        }
+      
+    }
+/* Ipad dọc 768x1024 */
+    @media screen and (max-width: 768px){
+          #main-menu{ display: none; }
+        #icon-menu-respon{
+            float: right;
+            top: 14px;
+            right: 11px;
+            display: block;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            padding-left: 11px;
+            text-align: center;
+            display: inline-block;
+            float: none;
+        }
+        #footer,#content, #sidebar{
+            padding: 0px 11px;
+            width: 100%
+        }
+        #content{
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            margin-bottom: 60px;
+        }
+        #sidebar .widget:nth-child(2n){
+             margin-left: 2%;
+        }
+       #sidebar .widget{
+        width: 49%;
+        margin-bottom: 10px;
+        float: left;
+       }
+       #banner{
+        display: none;
+       }
+       #footer .widget.about-us, #footer .widget.category{
+        width: 55%;
+        
+       }
+       #footer .widget.store,#footer .widget.contact-us{
+        width: 45%;
+        padding: 0px 11px;
+    }
+    
+    }
+/* Tablet nhỏ(480x640) */
+    @media screen and (max-width: 480px){
+        #sidebar .widget {
+            width: 100%;
+        }
+        #sidebar .widget:nth-child(2n){
+            margin-left: 0%;
+        }
+        #post-offer .list-post-offer li:nth-child(n){
+            width: 49%;
+            margin-right: 2%
+        }
+        #post-offer .list-post-offer li:nth-child(2n){
+            margin-right: 0px;
+        }
+        #footer .widget{
+            width: 100%!important;
+            float: none;
+        }
+        #footer .widget.store,#footer .widget.contact-us{
+        padding: 0px;
+    }
+      

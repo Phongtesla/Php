@@ -1,0 +1,107 @@
+ @media screen and (max-width: 9999px){
+        #footer,#header{
+            padding: 0px 11px;
+            width: 100%;
+        }
+    }
+/* Ipad ngang 1024x768 */
+    @media screen and (max-width: 1024px){
+        .wp-inner{
+            width: 100%;
+        }
+        #footer,#content,#sidebar,#header{
+            padding: 0px 11px;
+            width: 100%
+        }
+        #post .post-thumb img{
+            height: auto;  
+            width: 100%; 
+        }
+    }
+/* Ipad dọc 768x1024 */
+    @media screen and (max-width: 768px){
+        #wp-menu-respon{
+            position: fixed;
+            z-index: 99;
+        }
+        #main-menu{ display: none; }
+        #icon-menu-respon{
+            top: 27px;
+            right: 261px;
+            display: block;
+        }
+        #header{
+            text-align: center;
+            position: fixed;
+            z-index: 50;
+        }
+        #logo{
+            text-align: center;
+            display: inline-block;
+            float: none;
+        }
+        #footer,#content, #sidebar,#header{
+            padding: 0px 11px;
+            width: 100%
+        }
+        #content{
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            margin-bottom: 60px;
+        }
+        #sidebar .widget:nth-child(2n){
+             margin-left: 2%;
+        }
+       #sidebar .widget{
+        width: 49%;
+        margin-bottom: 10px;
+        float: left;
+       }
+       #banner{
+        display: none;
+       }
+       #footer .widget.about-us, #footer .widget.category{
+        width: 55%;
+        
+       }
+       #footer .widget.store,#footer .widget.contact-us{
+        width: 45%;
+        padding: 0px 11px;
+    }
+        #post .post-thumb img{
+            height: auto;   
+            width: 100%;
+        }
+    }
+/* Tablet nhỏ(480x640) */
+    @media screen and (max-width: 480px){
+        #sidebar .widget {
+            width: 100%;
+        }
+        #sidebar .widget:nth-child(2n){
+             display: none;
+        }
+        #sidebar .widget:nth-child(2n){
+            margin-left: 0%;
+        }
+        #post-offer .list-post-offer li:nth-child(n){
+            width: 49%;
+            margin-right: 2%
+        }
+        #post-offer .list-post-offer li:nth-child(2n){
+            margin-right: 0px;
+        }
+        #footer .widget{
+            width: 100%!important;
+            float: none;
+        }
+        #footer .widget.store,#footer .widget.contact-us{
+            padding: 0px;
+        }
+        #post .post-thumb img{
+            height: auto;
+            width: 100%;
+         }
+    }
+      

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm phương thức về thuộc tính</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+	<style>
+		form *{
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+		<script>
+			$(document).ready(function(){
+			 //click vào link hiện thị link của ảnh
+			 // $("a.get_link_img").click(function(){
+			 // 	var link_img;
+			 // 	link_img = $("img").attr('width','200');
+			 // 	alert(link_img);
+			 // 	return false;
+			 // })
+			 //remove attr
+			 $("a.remove_attr").click(function(){
+			 	$('img').removeAttr('src');
+			 	return false;
+			 })
+	 	});
+	</script>
+	<img width="100" ngu="óc chó" src="https://scontent.fhan5-4.fna.fbcdn.net/v/t1.0-9/53076399_102274607604020_8069244857618530304_n.jpg?_nc_cat=104&_nc_oc=AQnTUE-TTiSI7FBQ7Ec7XUjXgOfZ3Ht_9KBh83BfnqIKaCWFT99UWgl0dUPTOcItaOU&_nc_ht=scontent.fhan5-4.fna&oh=7295ee1846dd7d242d7da40cb143a619&oe=5DE4117F" alt="" title="">
+	<a class="get_link_img" href="#">Lấy link img</a>
+	<a class="remove_attr" href="#">Hủy giá trị thuộc tính</a>
+</body>
+</html>

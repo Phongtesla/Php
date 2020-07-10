@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector định vị</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+		//Chọn phần tử có chỉ số 1
+			//$("a:eq(0)").css('color',"red");
+		//Phần tử p đầu tiên
+			//$("p:first").css('color',"red");
+		//Phần tử cuối
+			//$("p:last").css('color',"red");
+		//Phần tử lớn hơn 1
+			//$("p:gt(1)").css('color',"red");
+		//Phần tử nhỏ hơn 3
+			//$("p:lt(3)").css('color',"red");
+		//Phần tử chỉ số lẻ
+			//$("p:odd").css('color',"red");
+		//Phần tử chỉ số chẵn
+			//$("p:even").css('color',"red");
+		//chọn các phần tử p ngoại trừ chỉ số 2
+			$("p:not('p.p2')").css('color',"red");
+	 	});
+	</script>
+	<p>Đoạn văn 0</p>
+	<p>Đoạn văn 1</p>
+	<p class="p2">Đoạn văn 2</p>
+	<p>Đoạn văn 3</p>
+	<p>Đoạn văn 4</p>
+	<p>Đoạn văn 5</p>
+	<p>Đoạn văn 6</p>
+	<div class="box">
+		<p>Đoạn văn 7</p>
+		<p>Đoạn văn 8</p>
+		<p>Đoạn văn 9</p>
+	</div>
+	<a href="">Link 1</a><br>
+	<a href="">Link 2</a>
+</body>
+</html>

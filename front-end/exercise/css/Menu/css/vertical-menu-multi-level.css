@@ -1,0 +1,61 @@
+body{
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+	line-height: 22px;
+}
+/*style header*/
+#header{
+	background: #2bbc9b;
+	height: 86px;
+}
+#header #wp-inner{
+	position: relative;
+}
+#logo{
+	padding: 7px 0px;
+	float: left;
+	display: block;
+}
+#main-menu{
+	width: 280px;
+	position: absolute;
+	top: 86px;
+	left: 0px;	
+}
+#main-menu li{
+	position: relative;
+}
+#main-menu li a{
+	position: relative;
+	display: block;
+	background: #2bbc9b;
+	width: 280px;
+	padding:20px 0px 20px 38px;
+	color: #fff;
+	text-transform: uppercase;
+	border-top: 1px solid #fff;
+}
+#main-menu li a:after{
+	font-family: FontAwesome;
+	font-size: 16px;
+	content: "\f0da";
+	right: 15px;
+	position: absolute;
+}
+#main-menu li:hover>a{
+	background: #24a085;
+	transition: all 0.5s;
+}
+#main-menu .sub-menu{
+	display: none;
+	position: absolute;
+	left: 100%;
+	top:0px;
+}
+#main-menu li:hover>.sub-menu{
+	display: block;
+}
+.slider{
+	background: #f6f6f6;
+	height: 425px;
+}

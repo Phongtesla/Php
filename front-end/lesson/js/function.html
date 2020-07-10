@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hàm trong js</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function checkEven(n){
+			if (n%2==0) return true;
+			return false;
+		}
+		function tEven(n){
+			var t = 1;
+			for (var i = 1; i <=n; i++){
+				if (checkEven(i)) {
+					t *= i;
+				}
+			}
+			return t;
+		}
+		alert(tEven(5));
+	</script>
+</body>	
+</html>

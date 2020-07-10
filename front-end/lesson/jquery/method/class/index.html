@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm phương thức về thuộc class</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<style>
+		.highlight{
+			color: red;
+			background: gold;
+		}	
+	</style>
+		<script>
+			$(document).ready(function(){
+				$("p").click(function(){
+					// C1:
+					// if ($(this).has('highlight')) {
+					// 	$('p').removeClass('highlight');
+					// 	$(this).addClass('highlight');
+					// }
+					C2:
+					$(this).toggleClass("highlight")
+				});
+	 		});
+		</script>
+	<p>Đoạn văn bản số 1</p>
+	<p>Đoạn văn bản số 2</p>
+	<p>Đoạn văn bản số 3</p>
+	<p>Đoạn văn bản số 4</p>
+	<p>Đoạn văn bản số 5</p>
+</body>
+</html>

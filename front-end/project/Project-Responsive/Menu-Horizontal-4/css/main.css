@@ -1,0 +1,207 @@
+body{
+	line-height: 30px;
+	font-family: Roboto;
+}
+.wp-inner{
+	position: relative;
+}
+#site{
+	overflow: hidden;
+	position: relative;
+}
+#wrapper{
+	position: relative;
+	left: 0px;
+	transition: left 0.25s;
+}
+#header{
+	background: #4fa327;
+	margin-bottom:50px;
+	position: relative; 
+}
+#logo{
+	padding: 13px 0px 13px 0px;
+
+}
+#main-menu li{
+	float: left;
+}
+#main-menu li a{
+	padding: 33px 23px 29px 23px;
+	display: block;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+}
+#main-menu li:hover a{
+	background: #ffffff;
+	color: #333333;
+	transition: all 0.5s;
+}
+#icon-menu-respon{
+	display: none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 28px;
+    padding: 23px 13px 27px 0px;
+    right: 0px;
+}
+
+				/*WP-CONTENT*/
+#content{
+	width: 71%;
+	border-right: 1px solid #f5f5f5;
+	padding-right: 35px;
+	margin-bottom: 47px;
+
+}
+#post .post-title{
+	font-size: 30px;
+	line-height: 30px;
+	color: #333333;
+	padding-bottom: 15px;
+}
+#post p{
+	font-size: 16px;
+	line-height: 30px;
+	color: #474747;
+}
+#post .post-thumb img{
+	width: 100%;
+	height: auto;	
+}
+#post-offer{
+	margin-top: 29px;
+}
+#post-offer h1{
+	font-size: 30px;
+	line-height: 30px;
+	color: #333333;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#post-offer .list-post-offer li{
+	float: left;
+	margin-right: 3.5%;
+	width: 31%;
+}
+#post-offer .list-post-offer li:nth-child(3n){
+	margin-right: 0px;
+}
+#post-offer .list-post-offer li{
+	margin-bottom: 22px;
+}
+#post-offer .list-post-offer li img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+/*sidebar*/
+#sidebar{
+	width:29%;
+	padding-left: 35px;
+}
+#sidebar .widget{
+    border: 1px solid #e3e3e3;
+    padding: 12px 15px 10px 23px;
+    margin-bottom: 20px;
+}
+#sidebar .widget:nth-child(odd){
+	background: #f5f5f5;
+}
+#sidebar .widget:nth-child(even){
+	background: #e8c2b0;
+}
+#sidebar .widget-title h4{
+	font-size: 21px;
+	font-weight: 500;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+#sidebar .widget-content p{
+	font-size: 14px;
+	line-height: 21px;
+}
+#banner img{
+	width: 100%;
+	height: auto;
+}
+#banner{
+	margin-top: 42px;
+}
+/*footer*/
+#footer{
+	background: #333333;
+	color: #dadada;
+}
+#footer .widget.about-us{
+	width: 34%;
+}
+#footer .widget .widget-title{
+	font-size: 24px;
+	line-height: 30px;
+	padding: 28px 0px 14px 0px;
+}
+#footer .widget .widget-content{
+	font-size: 14px;
+	line-height: 30px;
+	color: #ababab;
+	padding-bottom: 20px;
+}
+#footer .widget.store{
+	width: 25%;
+}
+#footer .widget.category{
+	width: 16%;
+}
+#footer .widget.contact-us{
+	width: 25%;
+}
+/*wp-menu-respon*/
+#wp-menu-respon{
+	position: absolute;
+	background: #f5f5f5;
+	width: 250px;
+	top: 0px;
+    left: -250px;
+    height: 100%;
+    transition:left 0.25s;
+}
+#logo-menu-respon img{
+	padding: 15px 0px 14px 0px;
+}
+#menu-respon li a{
+	display: block;
+	text-transform: uppercase;
+	color: #333333;
+	font-size: 18px;
+	font-weight: 500;
+	border-top: 1px solid  #c3c3c3;
+	padding: 18px 0px 18px 11px;
+}
+.has-sub-menu{
+	position: relative;
+}
+li a.has-sub-menu:after{
+	font-family: "FontAwesome";
+	content: "\f0d7";
+	position: absolute;
+	right: 20px;
+	font-size: 14px;
+	color: #777777;
+}
+#sub-menu{
+	display: none;
+}
+#sub-menu li a{
+	padding-left: 42px;
+}
+#site.open-menu-respon #wrapper{
+	left: 250px;
+	transition: left 0.25s;
+}
+#site.open-menu-respon #wp-menu-respon{
+	left: 0px;
+	transition: left 0.25s;
+}

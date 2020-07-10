@@ -1,0 +1,29 @@
+body{
+	font-family: roboto;
+	font-style: 13px;
+	color: #333;
+	line-height: 23px;
+}
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+#header, #footer{
+	padding: 15px 10px;
+	background: gray;
+}
+#content, #sidebar{
+	min-height: 600px;
+	padding:10px;
+}
+#content{
+	width: 70%;
+	float: left;
+	background: #f5f5f5;
+}
+#sidebar{
+	width: 30%;
+	float: right;
+	background: #d5d5d5;
+
+}

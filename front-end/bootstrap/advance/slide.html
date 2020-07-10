@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">m
+
+</head>
+<body>
+	<style>
+		body{
+			background: black;
+		}
+	</style>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Slideshow trong B</h1>
+				<div id="home-slide" class="carousel slide carousel-fade">
+					<ol class="carousel-indicators">
+						<li data-target="#home-slide" class="active" data-slide-to="0"></li>
+						<li data-target="#home-slide" data-slide-to="1"></li>
+						<li data-target="#home-slide" data-slide-to="2"></li>
+						<li data-target="#home-slide" data-slide-to="3"></li>
+						<li data-target="#home-slide" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner text-center">
+						<div class="carousel-item active" >
+							<img src="images/cr-1.jpg" class=" " width="200" alt="">
+							<div class="carousel-caption">
+								<h5>MONSTER</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.</p>
+							</div>
+						</div>
+						<div class="carousel-item" >
+							<img src="images/cr-2.jpg" class=" " width="300" height="300" alt="">
+							<div class="carousel-caption">
+								<h5>MONSTER</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.</p>
+							</div>
+						</div>
+						<div class="carousel-item" >
+							<img src="images/leo-1.jpg" class=" " width="200" alt="">
+							<div class="carousel-caption">
+								<h5>GENIUS</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.</p>
+							</div>
+						</div>
+						<div class="carousel-item" data-interval="1000">
+							<img src="images/leo-2.jpg" class="" width="200" alt="">
+							<div class="carousel-caption">
+								<h5>GENIUS</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.</p>
+							</div>
+						</div>
+						<div class="carousel-item" data-interval="1000">
+							<img src="images/wow.jpg" class="" width="200" alt="">
+							<div class="carousel-caption">
+								<h5>fictional</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, exercitationem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+									<!-- end carousel inner -->
+				<a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#home-slide" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#home-slide").carousel({
+					// interval: 1000,
+					ride: "carousel"
+				})
+			})
+		</script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

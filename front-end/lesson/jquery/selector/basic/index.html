@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector cơ bản</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<!-- 
+		1. Thiết lập text có màu đỏ
+		2. Thiết lập box có các css(width:200px, height: 100px, margin: 20px; border: 1px solid #333)
+		3. Thiết lập box1 có backgound:black:
+		4. Thiết lập box2, box3 có background: gold
+	 -->
+	<script>
+		$(document).ready(function(){
+			$('.box').css('color',"red");
+			$('.box').css({
+				'width':"200px",
+				'height':"100px",
+				'margin':"20px",
+				'border':"1px solid #333"
+			});
+			$('#box1').css('background',"black");
+			$('#box2, #box3').css('background',"gold");
+	 	});
+	</script>
+	<div id="box1" class="box">
+		<p>Nội dung khối 1</p>
+	</div>
+		<div id="box2" class="box">
+		<p>Nội dung khối 2</p>
+	</div>
+		<div id="box3" class="box">
+		<p>Nội dung khối 3</p>
+	</div>
+</body>
+</html>

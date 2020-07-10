@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector theo nôi dung</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			//Tìm phần tử không có nội dung 
+			//$("ul li :empty").text('Đéo có nội dung')
+			//Tìm các phần tử chứa nội dung "Phần"
+			//$("ul li:contains('90')").css('color','red');
+			//Tìm tất cả các phần tử có nội dung(ngược lại với empty)
+			//$("ul li:parent").css('color','red');
+			//Tìm phần tử có ít nhất là 1 phần tử con là selector cho trước
+			$("ul.sub:has('.color_red')").css('border','1px solid red');
+	 	});
+	</script>
+	<ul>
+		<li>Phần tử 90</li>
+		<li>
+			<ul class="sub">
+				<li class="color_red">Phần tử 2.1</li>
+				<li>Phần tử 2.2</li>
+			</ul>
+		</li>
+		<li>Phần tử 3</li>
+		<li>
+			<ul>
+				<li>Phần tử 4.1</li>
+				<li>Phần tử 4.2</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

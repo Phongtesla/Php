@@ -1,0 +1,253 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 27px;
+	font-weight: 400;
+	color: #514545;
+}
+/*Top header*/
+#top-header p.time:before{
+	font-family: FontAwesome;
+	content: "\f017";
+	padding-right: 5px;
+}
+#top-header p.support:before{
+	font-family: FontAwesome;
+	content: "\f0e0";
+	padding-right: 5px;
+}
+#top-header p.contact:before{
+	font-family: FontAwesome;
+	content: "\f095";
+	padding-right: 5px;
+}
+                     /*Header*/
+ #header #main-nav li a{
+	color: white;
+ }
+  #header #main-nav li:hover a{
+	color: red;
+ }
+
+   #header #main-nav .dropdown .dropdown-menu li:hover a{
+	color: red!important;
+ }
+
+ 					/*Wp-content*/
+ /*SLIDER*/
+ #slider{
+ 	margin-bottom: 77px;
+ }
+ #wp-content #home-slide ol li{
+	background-color: white;
+}
+#wp-content #home-slide ol li.active{
+	background-color: red;
+}
+/*#SERVICE*/
+ #service{
+ 	margin-bottom: 80px;
+ }
+#wp-content #service .service-returning p:before{
+	font-family: fontawesome;
+	content: "\f132 ";
+	font-size: 48px;
+	position: absolute;
+	top: -3px;
+	left: 50%;
+	margin-top: 5px;
+}
+#wp-content #service .service-support p:before{
+	font-family: fontawesome;
+	content: "\f025 ";
+	font-size: 48px;
+	position: absolute;
+	top: -3px;
+	left: 50%;
+	margin-top: 5px;
+}
+#wp-content #service .service-ship p:before{
+	font-family: fontawesome;
+	content: "\f0d1";
+	font-size: 48px;
+	position: absolute;
+	top: -3px;
+	left: 50%;
+	margin-top: 5px;
+}
+#wp-content #service p:hover{
+	color: red;
+	cursor: pointer;
+}
+#wp-content #service p{
+	background: #f4f4f4;
+	padding: 66px 0px 14px 0;
+	margin-bottom: 0px;
+}
+/*PRODUCT-NEW*/
+#prod-new .card:hover img{
+	transform: scale(1.05,1.05);
+}
+#prod-new{
+	margin-top: 80px;
+}
+.rate-box{
+	color: gold;
+}
+.card-body .name-prod:hover{
+	color: red!important;
+}
+/*<!-- OTHER PRODUCT -->*/
+#other-prod{
+	margin-top: 77px;
+	margin-bottom: 80px;
+}
+#other-prod .infor{
+	bottom: 33px;
+	right: 30px;
+
+}
+#other-prod .card-title{
+	font-size: 48px;
+}
+/*BEST SELLER*/
+#best-seller{
+	margin-bottom: 78px;
+}
+.owl-dots {
+	display: none;
+}
+.owl-nav .owl-prev span, .owl-next span{
+	border: 1px solid;
+    background: black;
+    color: white;
+    padding: 0px 8px 2px 8px;
+    font-size: 22px;
+}
+.owl-nav .owl-prev span:hover, .owl-next span:hover{
+    background: red;
+
+}
+/*Blog*/
+#blog{
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+#blog .title{
+	font-size: 30px;
+}
+#blog .blog-head p:not(.title){
+	font-size: 14px;
+}
+#blog .card-body h4{
+	font-size: 16px;
+}
+#blog .card-body .infor{
+	font-size: 14px;
+}
+#blog .card-body small{
+	font-size: 11px;
+}
+#blog .list-post{
+	margin-bottom: 48px;
+}
+#blog .more a{
+	border: 1px solid #d3d3d3;
+    padding: 3px 34px 3px 34px;
+    color: black;
+    text-decoration: none;
+}
+#blog .more a:hover{
+	background: red;
+	color: white;
+}
+				/*FOOTER*/
+#footer .address{
+	padding-top: 61px;
+	padding-bottom: 45px;
+}
+#footer .address .address-detail:before{
+	font-family: fontawesome;
+	content: "\f041";
+	font-size: 16px;
+}
+#footer .address .phone:before{
+	font-family: fontawesome;
+	content: "\f095";
+	font-size: 16px;
+	padding-right: 4px;
+}
+#footer .address .support:before{
+	font-family: fontawesome;
+	content: "\f0e0";
+	font-size: 16px;
+	padding-right: 2px;
+}
+/*intro*/
+#footer .introduce{
+	padding-top: 61px;
+	padding-bottom: 45px;
+}
+
+#footer .introduce .detail a{
+	color: white;
+	margin: 0px;
+}
+#footer .introduce .detail a:hover{
+	text-decoration: underline;
+	transition: 1s;
+}
+/*category*/
+#footer .category{
+	padding-top: 61px;
+	padding-bottom: 45px;
+}
+
+#footer .category .detail a{
+	color: white;
+	margin: 0px;
+}
+#footer .category .detail a:hover{
+	text-decoration: underline;
+	transition: 1s;
+}
+/*social*/
+#footer .social{
+	padding-top: 61px;
+	padding-bottom: 45px;
+}
+
+#footer .social .detail a{
+	color: white;
+	margin: 0px;
+}
+#footer .social .detail a:hover{
+	color: blue;
+	transition: 1s;
+}
+#footer .social .detail .fb:before{
+	font-family: fontawesome;
+	content: "\f09a";
+	padding-right: 3px;
+}
+#footer .social .detail .yt:before{
+	font-family: fontawesome;
+	content: "\f16a";
+	padding-right: 3px;
+}
+#footer .social .detail .tt:before{
+	font-family: fontawesome;
+	content: "\f099";
+	padding-right: 3px;
+}
+			/*COPYRIGHT;*/
+#copyright p{
+	margin-top: 11px;
+}
+#copyright p:before{
+	font-family: fontawesome;
+	content: "\f1f9";
+	padding-right: 3px;
+}
+
+

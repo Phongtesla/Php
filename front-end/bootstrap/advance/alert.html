@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alert</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Cảnh báo alert trong B</h1>
+				<h3>Ẩn alert</h3>
+				<div id="myAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
+					My lơve
+					<button class="close" type="button" data-dismiss="alert" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<h3>cấu trúc alert</h3>
+				<div class="alert alert-danger" role="alert">
+					Cảnh báo đơn giản
+				</div>
+				<h3>Background alert</h3>
+				<div class="alert alert-primary" role="alert">
+					Cảnh báo đơn giản
+				</div>
+				<div class="alert alert-success" role="alert">
+					Cảnh báo đơn giản
+				</div>
+				<div class="alert alert-info" role="alert">
+					Cảnh báo đơn giản
+				</div>
+				<div class="alert alert-secondary" role="alert">
+					Cảnh báo đơn giản
+				</div>
+				<h3>Link trong alert</h3>
+				<div class="alert alert-danger" role="alert">
+					Bạn đã thêm bài viết thành công. Click <a href="" class="alert-link">vào đây</a> để về trang chủ!
+				</div>
+				<h3> Alert đa nội dung</h3>
+				<div class="alert alert-danger" role="alert">
+					<h4 class="alert-heading">Thông báo !!</h4>
+					Bạn đã thêm bài viết thành công. Click <a href="" class="alert-link">vào đây</a> để về trang chủ!
+					<p>Lorem ipsum dolor <strong>UNITOP</strong> sit amet, consectetur adipisicing elit. Consectetur nesciunt aspernatur labore, temporibus cupiditate cum, adipisci tempora asperiores quae quod placeat commodi est odio hic, nam quisquam alias. Magnam, nisi?</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt aspernatur labore, temporibus cupiditate cum, adipisci tempora asperiores quae quod placeat commodi est odio hic, nam quisquam alias. Magnam, nisi?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="Js/jquery-3.3.1.slim.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#myAlert").on("closed.bs.alert",function(){
+					alert("Đã ẩn alert")
+				})
+			})
+		</script>
+    <script src="Js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

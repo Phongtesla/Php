@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sự kiện resize</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<style>
+		
+	</style>
+	<script>
+		$(document).ready(function(){
+			var size_width = $(window).width();
+			$("#size_width #result").text(size_width +'px')
+			$(window).resize(function(){
+				size_width = $(window).width();
+				$("#size_width #result").text(size_width +'px')
+			})
+		});
+	</script>
+		<h1>Sự kiện resize trong Jquery</h1>
+		<p id="size_width">Độ rộng trình duyệt <span id="result"></span></p>
+</body>
+</html>

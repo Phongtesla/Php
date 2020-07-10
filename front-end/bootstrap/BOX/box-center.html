@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box center</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<style>
+		.type-1 .box-child{
+			width: 100px;
+		}
+	</style>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Căn giữa khối trong B</h1>
+				<h2>Cách 1</h2>
+				<div class="box-parent bg-secondary type-1">
+					<div class="box-child bg-success mx-auto">
+						Lorem ipsum dolor sit amet, consectetur.
+					</div>
+				</div>
+				<h2>Cách 2</h2>
+				<div class="box-parent bg-secondary type-2 text-centerx1">
+					<div class="box-child bg-success d-inline-block">
+						Lorem ipsum dolor sit amet.
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhóm selector theo loại</title>
+	<script src="Js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+	<style>
+		form *{
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+		<script>
+			$(document).ready(function(){
+				//1.Đếm số input
+				// var num_input=$("form :input").length;
+				// alert(num_input);	
+				//1. Chọn input text
+				// $("form :text").css("border",'1px solid red');
+				//2. Chọn input password
+				// $("form :password").css("border",'1px solid red');
+				//3.Đếm số lượng phần tử select đã đc chọn
+				// var input_select_selected = $("form :selected");
+				// input_select_selected.each(function(){
+				// 	alert($(this).text())
+				// })
+				// var input_checkbox_checked = $("form :checkbox:checked");
+				// input_checkbox_checked.each(function(){
+				// 	alert($(this).val());
+				// });
+				//4.Phần tử dis,enabled 
+				$("form :disabled").css('border','1px solid red');
+	 	});
+	</script>
+	<form>
+		<input type="text">
+		<input type="password" disabled="disabled">
+		<input type="checkbox" class="hobby" value="game"  checked="checked">
+		<input type="checkbox" class="hobby" value="shopping" >
+		<input type="checkbox" class="hobby" value="read_book"  checked="checked">
+		<input type="radio">
+		<textarea></textarea>
+		<button>Nút bấm</button>
+		<input type="submit">
+		<input type="file">
+		<select>
+			 <option>Lựa chọn</option>
+			 <option >PHP</option>
+			 <option selected="selected">Jquery</option>
+		</select>
+	</form>
+
+</body>
+</html>
